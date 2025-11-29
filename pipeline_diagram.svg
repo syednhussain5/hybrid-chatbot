@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000" height="800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Professional gradients -->
+    <linearGradient id="inputGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="apiGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="classificationGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="vectorGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#43e97b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#38f9d7;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="graphGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fa709a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fee140;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="generalGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a8edea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fed6e3;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="aiGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff9a9e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fecfef;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Arrow markers -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4a5568"/>
+    </marker>
+    
+    <marker id="arrowheadBlue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3182ce"/>
+    </marker>
+    
+    <marker id="arrowheadGreen" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#38a169"/>
+    </marker>
+    
+    <marker id="arrowheadOrange" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ed8936"/>
+    </marker>
+    
+    <!-- Drop shadow filter -->
+    <filter id="dropshadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1000" height="800" fill="#ffffff" stroke="none"/>
+  
+  <!-- Title -->
+  <text x="500" y="30" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-size="22" font-weight="700" fill="#2d3748">
+    AsappFinal AI Pipeline Architecture
+  </text>
+  <text x="500" y="50" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#718096">
+    Intelligent Query Routing &amp; Processing System
+  </text>
+  
+  <!-- 1. USER INPUT -->
+  <g transform="translate(50, 80)">
+    <rect x="0" y="0" width="120" height="80" fill="url(#inputGradient)" stroke="#4a5568" stroke-width="2" rx="10" filter="url(#dropshadow)"/>
+    <text x="60" y="25" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="white">
+      User Input
+    </text>
+    <text x="60" y="45" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="white" opacity="0.9">
+      React Frontend
+    </text>
+    <text x="60" y="60" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="white" opacity="0.9">
+      Port 3000
+    </text>
+  </g>
+  
+  <!-- Arrow 1 -->
+  <line x1="170" y1="120" x2="200" y2="120" stroke="#4a5568" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- 2. FASTAPI BACKEND -->
+  <g transform="translate(220, 80)">
+    <rect x="0" y="0" width="120" height="80" fill="url(#apiGradient)" stroke="#4a5568" stroke-width="2" rx="10" filter="url(#dropshadow)"/>
+    <text x="60" y="25" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="white">
+      FastAPI Backend
+    </text>
+    <text x="60" y="45" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="white" opacity="0.9">
+      API Gateway
+    </text>
+    <text x="60" y="60" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="white" opacity="0.9">
+      Port 8000
+    </text>
+  </g>
+  
+  <!-- Arrow 2 -->
+  <line x1="340" y1="120" x2="370" y2="120" stroke="#4a5568" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- 3. QUERY CLASSIFICATION -->
+  <g transform="translate(390, 80)">
+    <rect x="0" y="0" width="120" height="80" fill="url(#classificationGradient)" stroke="#4a5568" stroke-width="2" rx="10" filter="url(#dropshadow)"/>
+    <text x="60" y="25" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="white">
+      Query Classification
+    </text>
+    <text x="60" y="45" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="white" opacity="0.9">
+      Gemini 2.5 Flash
+    </text>
+    <text x="60" y="60" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="white" opacity="0.9">
+      Intent Analysis
+    </text>
+  </g>
+  
+  <!-- Decision Diamond -->
+  <g transform="translate(540, 100)">
+    <polygon points="0,0 30,20 0,40 -30,20" fill="#f7fafc" stroke="#4a5568" stroke-width="2" filter="url(#dropshadow)"/>
+    <text x="0" y="15" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#2d3748">
+      Query
+    </text>
+    <text x="0" y="28" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#2d3748">
+      Type?
+    </text>
+  </g>
+  
+  <!-- Arrow from classification to decision -->
+  <line x1="510" y1="120" x2="540" y2="120" stroke="#4a5568" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Three branching paths -->
+  
+  <!-- PATH 1: GENERAL QUERY -->
+  <g transform="translate(50, 200)">
+    <rect x="0" y="0" width="120" height="80" fill="url(#generalGradient)" stroke="#4a5568" stroke-width="2" rx="10" filter="url(#dropshadow)"/>
+    <text x="60" y="25" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#2d3748">
+      General Query
+    </text>
+    <text x="60" y="45" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#4a5568">
+      Conversational
+    </text>
+    <text x="60" y="60" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#4a5568">
+      Greetings
+    </text>
+  </g>
+  
+  <!-- Arrow to General -->
+  <path d="M 540 140 Q 300 170 110 200" stroke="#4a5568" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="300" y="160" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#4a5568">
+    General
+  </text>
+  
+  <!-- PATH 2: VECTOR SEARCH -->
+  <g transform="translate(300, 200)">
+    <rect x="0" y="0" width="120" height="80" fill="url(#vectorGradient)" stroke="#4a5568" stroke-width="2" rx="10" filter="url(#dropshadow)"/>
+    <text x="60" y="25" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="white">
+      Vector Search
+    </text>
+    <text x="60" y="45" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="white" opacity="0.9">
+      Document Search
+    </text>
+    <text x="60" y="60" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="white" opacity="0.9">
+      Semantic Match
+    </text>
+  </g>
+  
+  <!-- Arrow to Vector -->
+  <line x1="570" y1="140" x2="360" y2="200" stroke="#38a169" stroke-width="3" marker-end="url(#arrowheadGreen)"/>
+  <text x="465" y="165" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#38a169">
+    Vector
+  </text>
+  
+  <!-- PATH 3: KNOWLEDGE GRAPH -->
+  <g transform="translate(550, 200)">
+    <rect x="0" y="0" width="120" height="80" fill="url(#graphGradient)" stroke="#4a5568" stroke-width="2" rx="10" filter="url(#dropshadow)"/>
+    <text x="60" y="25" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="white">
+      Knowledge Graph
+    </text>
+    <text x="60" y="45" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="white" opacity="0.9">
+      Entity Relations
+    </text>
+    <text x="60" y="60" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="white" opacity="0.9">
+      Multi-hop
+    </text>
+  </g>
+  
+  <!-- Arrow to Knowledge Graph -->
+  <path d="M 570 140 Q 650 170 610 200" stroke="#ed8936" stroke-width="3" fill="none" marker-end="url(#arrowheadOrange)"/>
+  <text x="650" y="160" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#ed8936">
+    Graph
+  </text>
+  
+  <!-- Document Processing Steps -->
+  
+  <!-- Vector Path Processing -->
+  <g transform="translate(200, 320)">
+    <rect x="0" y="0" width="120" height="80" fill="#e6fffa" stroke="#38b2ac" stroke-width="2" rx="10" filter="url(#dropshadow)"/>
+    <text x="60" y="25" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#2c7a7b">
+      Document Processing
+    </text>
+    <text x="60" y="45" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#2c7a7b">
+      Semantic Chunking
+    </text>
+    <text x="60" y="60" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#2c7a7b">
+      100-300 tokens
+    </text>
+  </g>
+  
+  <!-- Arrow from Vector to Document Processing -->
+  <line x1="360" y1="280" x2="260" y2="320" stroke="#38a169" stroke-width="3" marker-end="url(#arrowheadGreen)"/>
+  
+  <!-- Qdrant Vector DB -->
+  <g transform="translate(200, 440)">
+    <rect x="0" y="0" width="120" height="80" fill="url(#vectorGradient)" stroke="#4a5568" stroke-width="2" rx="10" filter="url(#dropshadow)"/>
+    <text x="60" y="25" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="white">
+      Qdrant Vector DB
+    </text>
+    <text x="60" y="45" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="white" opacity="0.9">
+      BGE Embeddings
+    </text>
+    <text x="60" y="60" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="white" opacity="0.9">
+      Cosine Search
+    </text>
+  </g>
+  
+  <!-- Arrow from Document Processing to Qdrant -->
+  <line x1="260" y1="400" x2="260" y2="440" stroke="#38a169" stroke-width="3" marker-end="url(#arrowheadGreen)"/>
+  
+  <!-- Knowledge Graph Path Processing -->
+  <g transform="translate(550, 320)">
+    <rect x="0" y="0" width="120" height="80" fill="#fef5e7" stroke="#ed8936" stroke-width="2" rx="10" filter="url(#dropshadow)"/>
+    <text x="60" y="25" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#c05621">
+      Entity Processing
+    </text>
+    <text x="60" y="45" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#c05621">
+      Ollama Extraction
+    </text>
+    <text x="60" y="60" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#c05621">
+      Relationship Mapping
+    </text>
+  </g>
+  
+  <!-- Arrow from Knowledge Graph to Entity Processing -->
+  <line x1="610" y1="280" x2="610" y2="320" stroke="#ed8936" stroke-width="3" marker-end="url(#arrowheadOrange)"/>
+  
+  <!-- Neo4j Graph DB -->
+  <g transform="translate(550, 440)">
+    <rect x="0" y="0" width="120" height="80" fill="url(#graphGradient)" stroke="#4a5568" stroke-width="2" rx="10" filter="url(#dropshadow)"/>
+    <text x="60" y="25" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="white">
+      Neo4j Graph DB
+    </text>
+    <text x="60" y="45" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="white" opacity="0.9">
+      Cypher Queries
+    </text>
+    <text x="60" y="60" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="white" opacity="0.9">
+      Multi-hop Analysis
+    </text>
+  </g>
+  
+  <!-- Arrow from Entity Processing to Neo4j -->
+  <line x1="610" y1="400" x2="610" y2="440" stroke="#ed8936" stroke-width="3" marker-end="url(#arrowheadOrange)"/>
+  
+  <!-- General Query Path -->
+  <g transform="translate(50, 320)">
+    <rect x="0" y="0" width="120" height="80" fill="url(#generalGradient)" stroke="#4a5568" stroke-width="2" rx="10" filter="url(#dropshadow)"/>
+    <text x="60" y="25" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#2d3748">
+      Direct Processing
+    </text>
+    <text x="60" y="45" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#4a5568">
+      No DB Query
+    </text>
+    <text x="60" y="60" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#4a5568">
+      Conversational
+    </text>
+  </g>
+  
+  <!-- Arrow from General to Direct Processing -->
+  <line x1="110" y1="280" x2="110" y2="320" stroke="#4a5568" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- AI Processing Convergence -->
+  <g transform="translate(400, 560)">
+    <rect x="0" y="0" width="120" height="80" fill="url(#aiGradient)" stroke="#4a5568" stroke-width="2" rx="10" filter="url(#dropshadow)"/>
+    <text x="60" y="25" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="white">
+      AI Processing
+    </text>
+    <text x="60" y="45" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="white" opacity="0.9">
+      Gemini 2.5 Flash
+    </text>
+    <text x="60" y="60" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="white" opacity="0.9">
+      Response Generation
+    </text>
+  </g>
+  
+  <!-- Arrows converging to AI Processing -->
+  <line x1="170" y1="520" x2="400" y2="560" stroke="#4a5568" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="260" y1="520" x2="420" y2="560" stroke="#38a169" stroke-width="3" marker-end="url(#arrowheadGreen)"/>
+  <line x1="610" y1="520" x2="520" y2="560" stroke="#ed8936" stroke-width="3" marker-end="url(#arrowheadOrange)"/>
+  
+  <!-- Response Output -->
+  <g transform="translate(400, 680)">
+    <rect x="0" y="0" width="120" height="80" fill="url(#inputGradient)" stroke="#4a5568" stroke-width="2" rx="10" filter="url(#dropshadow)"/>
+    <text x="60" y="25" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="white">
+      Response Output
+    </text>
+    <text x="60" y="45" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="white" opacity="0.9">
+      JSON Response
+    </text>
+    <text x="60" y="60" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="white" opacity="0.9">
+      User Interface
+    </text>
+  </g>
+  
+  <!-- Arrow from AI Processing to Response -->
+  <line x1="460" y1="640" x2="460" y2="680" stroke="#4a5568" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Pipeline Legend -->
+  <g transform="translate(750, 200)">
+    <rect x="0" y="0" width="200" height="200" fill="#f8f9fa" stroke="#e2e8f0" stroke-width="1" rx="10"/>
+    <text x="100" y="25" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#2d3748">
+      Pipeline Paths
+    </text>
+    
+    <line x1="20" y1="50" x2="40" y2="50" stroke="#4a5568" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <text x="50" y="55" font-family="Inter, sans-serif" font-size="11" fill="#2d3748">
+      General Query Path
+    </text>
+    
+    <line x1="20" y1="80" x2="40" y2="80" stroke="#38a169" stroke-width="3" marker-end="url(#arrowheadGreen)"/>
+    <text x="50" y="85" font-family="Inter, sans-serif" font-size="11" fill="#2d3748">
+      Vector Search Path
+    </text>
+    
+    <line x1="20" y1="110" x2="40" y2="110" stroke="#ed8936" stroke-width="3" marker-end="url(#arrowheadOrange)"/>
+    <text x="50" y="115" font-family="Inter, sans-serif" font-size="11" fill="#2d3748">
+      Knowledge Graph Path
+    </text>
+    
+    <text x="100" y="140" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#2d3748">
+      Processing Steps:
+    </text>
+    
+    <text x="20" y="160" font-family="Inter, sans-serif" font-size="10" fill="#4a5568">
+      • Vector: Docs → Chunking → Qdrant
+    </text>
+    <text x="20" y="175" font-family="Inter, sans-serif" font-size="10" fill="#4a5568">
+      • Graph: Docs → Ollama → Neo4j
+    </text>
+    <text x="20" y="190" font-family="Inter, sans-serif" font-size="10" fill="#4a5568">
+      • General: Direct → Gemini
+    </text>
+  </g>
+</svg>

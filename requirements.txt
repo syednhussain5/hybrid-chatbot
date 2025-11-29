@@ -1,0 +1,28 @@
+# Core Backend Dependencies
+fastapi==0.115.6
+uvicorn==0.34.2
+pydantic==2.11.5
+python-multipart==0.0.20
+
+# gRPC Dependencies
+grpcio==1.68.1
+grpcio-tools==1.68.1
+protobuf==6.31.0
+
+# RAG System Dependencies
+sentence-transformers==3.3.1
+pinecone-client==5.0.1
+langchain-pinecone==0.1.0
+pdfplumber==0.11.4
+numpy==2.2.6
+
+# AI/LLM Dependencies
+google-generativeai==0.8.3
+langchain-google-genai==2.0.7
+langchain-core==0.3.23
+langchain-community==0.3.10
+requests==2.32.3
+
+# Utility Dependencies
+python-dotenv==1.1.0
+typing-extensions==4.13.2

@@ -1,0 +1,45 @@
+syntax = "proto3";
+
+package chatbot;
+
+// Chat service definition
+service ChatService {
+    // Unary RPC for single message
+    rpc SendMessage(ChatMessage) returns (ChatResponse);
+    
+    // Streaming RPC for real-time chat
+    rpc ChatStream(stream ChatMessage) returns (stream ChatResponse);
+    
+    // Get chat history
+    rpc GetChatHistory(ChatHistoryRequest) returns (ChatHistoryResponse);
+}
+
+// Message types
+message ChatMessage {
+    string user_id = 1;
+    string message = 2;
+    string session_id = 3;
+    int64 timestamp = 4;
+    map<string, string> metadata = 5;
+}
+
+message ChatResponse {
+    string response = 1;
+    string session_id = 2;
+    int64 timestamp = 3;
+    string classification = 4;  // general, vector, knowledge_graph, hybrid
+    float confidence = 5;
+    map<string, string> metadata = 6;
+}
+
+message ChatHistoryRequest {
+    string user_id = 1;
+    string session_id = 2;
+    int32 limit = 3;
+}
+
+message ChatHistoryResponse {
+    repeated ChatMessage messages = 1;
+    repeated ChatResponse responses = 2;
+    int32 total_count = 3;
+}
