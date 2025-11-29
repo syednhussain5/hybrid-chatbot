@@ -1,4 +1,4 @@
-# hybrid-chatbot-using-vectordb-and-knowledge-graph
+# hybrid-chatbot
 
 **HybridRAG-Chatbot** - is an end-to-end intelligent chatbot system built with FastAPI backend and React frontend that uses Google Gemini from Langchain framework for natural language understanding, combining Pinecone vector database for semantic document search and Neo4j knowledge graph for entity relationship queries with automatic query routing and hybrid search capabilities.
 
